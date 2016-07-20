@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+        <title>Pizza Delivery</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        <script src="js/script.js"></script>
+        
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Form With Labels On Top</title>
+
+	<link rel="stylesheet" href="styles/demo.css">
+	<link rel="stylesheet" href="styles/form-labels-on-top.css">
+
+</head>
+
+    <div id="hero">
+	<header>
+		<img id="logo" src="images/Inspyre-Design-Logo-Final-small.png" alt="logo"> 
+        <h1>Get Your Pizza Here!</h1>
+    </header>
+      </div>
+     <body>   
+    <div id="spacer"></div>
+    
+
+
+    <div class="main-content">
+
+        <!-- You only need this form and the form-labels-on-top.css -->
+
+        <form id="pizzaForm" class="form-labels-on-top" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Place Your Order</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Full name</span>
+                    <input type="text" name="name">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Address Type</span>
+                    <select id="selection" onchange="check();" name="dropdown">
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Business</option>
+                        <option>Campus</option>
+                        <option>Hotel</option>
+                        <option>Dorm</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </div>
+            <div id="myDIV" class="form-row">
+                <label>
+                </label>
+            </div>
+            <div id="enterOther" style="display:none" class="form-row">
+                <label>
+                    <span></span>
+                    <input  type="text" name="address">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Address</span>
+                    <input type="text" name="address">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+                
+              <div class="form-row">
+                <label>
+                    <span>City</span>
+                    <input type="text" name="city">
+                </label>
+            </div>
+             <div class="form-row">
+                <label>
+                    <span>State</span>
+                    <input type="text" name="state">
+                </label>
+            </div>
+             <div class="form-row">
+                <label>
+                    <span>Zip Code</span>
+                    <input type="text" name="zip code">
+                </label>
+            </div>
+             <div class="form-row">
+                <label>
+                    <span>Phone Number</span>
+                    <input type="tel" name="urstel">
+                </label>
+            </div>
+            <div class="form-row">
+                <label><span>Radio</span></label>
+                <div class="form-radio-buttons">
+            <div>
+                        <label>
+                            <input onclick="javascript: return yourfunction(1)" type="radio" name="radio">
+                            <span>Hand Tossed</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input onclick="javascript: return yourfunction(2)" type="radio" name="radio">
+                            <span>Thin Crust</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input onclick="javascript: return yourfunction(3)" type="radio" name="radio">
+                            <span>New York Style</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input onclick="javascript: return yourfunction(4)" type="radio" name="radio">
+                            <span>Gluten Free</span>
+                        </label>
+                    </div>
+            </div>
+            
+            <div id="one" style="display:none">
+                <label>
+                
+                    <select id="handTossed" name="dropdown">
+                        <option value="smHandTossed">Small ($9.99)</option>
+                        <option value="mdHandTossed">Medium ($12.99), </option>
+                        <option value="lgHandTossed">Large ($14.99) </option>
+                    </select>
+                </label>
+            </div>
+            <div  id="two" style="display:none">
+                <label>
+                
+                    <select  id="thinCrust" name="dropdown">
+                        <option value="mdThinCrust">Medium ($11.99) </option>
+                        <option  value="lgThinCrust">Large ($13.99) </option>
+                    </select>
+                </label>
+            </div>
+            <div  id="three" style="display:none">
+                <label>
+                
+                    <select name="dropdown">
+                        <option value="lgNY">Large ($16.99) </option>
+                        <option value="xlgNY">Extra Large ($19.99) </option>
+                    </select>
+                </label>
+            </div>
+                <div id="four" style="display:none">
+                <label>
+                    <select name="dropdown">
+                        <option value="smGluten">Small ($10.99) </option>
+                    </select>
+                </label>
+            </div>
+            
+           
+            <div >
+                <label>
+                
+                    <select   name="cheesedropdown" class="extras">
+                        <option value="">Light: no charge </option>
+                        <option value="">Normal: no charge</option>
+                        <option value="">Extra: + $2.99</option>
+                        <option value="">Double: + $3.99</option>
+                        
+                    </select>
+                </label>
+            </div>
+            
+            <div >
+                <label>
+                
+                    <select name="saucedropdown" class="extras">
+                        <option value="">Regular: no charge </option>
+                        <option value="">Hearty Tomato: $.99</option>
+                        <option value="">BBQ Sauce: + $1.99</option>
+                        
+                    </select>
+                </label>
+            </div>
+                <div class="form-row">
+                    <label class="toppingsTitle">Extra Toppings: $.99</label><br>
+                    <input type="checkbox" class="toppings"> Pepperoni
+                    <input type="checkbox" class="toppings"> Sausage
+                    <input type="checkbox" class="toppings"> Ham
+                    <input type="checkbox" class="toppings"> Bacon
+                    <input type="checkbox" class="toppings"> Salami
+                    <input type="checkbox" class="toppings"> Peppers
+                    <input type="checkbox" class="toppings"> Olives
+                    <input type="checkbox" class="toppings"> Jalapenos
+                    <input type="checkbox" class="toppings"> Mushrooms
+                    <input type="checkbox" class="toppings"> Pineapple
+                    <input type="checkbox" class="toppings"> Onion
+                    
+                </div>
+             <div class="form-row">
+                <button type="submit">Submit Form</button>
+            </div>
+            <div id="totalPrice"></div>
+                </div>
+
+           
+        </form>
+</body>
+
+</html>
