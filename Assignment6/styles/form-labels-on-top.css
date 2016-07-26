@@ -2,6 +2,9 @@ html{
     background-color: #f3f3f3;
 }
 
+#billingForm {
+    margin-top: 30px;
+}
 .form-labels-on-top{
     box-sizing: border-box;
     max-width: 475px;
