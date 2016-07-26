@@ -78,6 +78,22 @@ header a{
     margin-bottom: 75px;
 }
 
+#divTotal {
+    color: white;
+    background-color: red;
+    width: 100px;
+    height: 102px;
+    position: fixed;
+    top: 220px;
+    right: 0;
+    padding: 10px 0 0 10px;
+    
+}
+#total {
+    color: white;
+    padding-top: 4px;
+}
+
 /* -- Demo ads -- */
 
 @media (max-width: 1200px) {
